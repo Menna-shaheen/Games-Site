@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>GameOver</title>
+   <link rel="shortcut icon" href="images/logo-sm.png" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <!-- Page of Games -->
+   <div class="games">
+      <!-- Header -->
+      <header>
+         <img src="images/wraper.png" class="w-100" alt="">
+      </header>
+      <!-- Navbar -->
+
+      <nav class="navbar position-sticky top-0  w-75 m-auto navbar-expand-lg  rounded-4 ">
+         <div class="container">
+            <h6 class="navbar-brand text-white">
+               <img src="images/logo-sm.png" alt="logo photo" style="max-width: 40px" />GAME REVIEWS
+            </h6>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small text-center">
+                  <li class="nav-item ">
+                     <a role="button" class="nav-link active text-uppercase text-white" aria-current="page"
+                        data-category="mmorpg">mmorpg</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase text-white"
+                        data-category="permadeath">permadeath</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+                  </li>
+                  <li class="nav-item">
+                     <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Cards -->
+      <div class="container mt-5">
+         <div class="row g-3 text-center " id="games">
+
+
+         </div>
+      </div>
+   </div>
+      <!-- Details -->
+      <div class="details d-none">
+         <div class="container">
+            <header class="hstack justify-content-between">
+               <h1 class="text-center h3 py-4">Details Game</h1>
+               <button class="btn-close btn-close-white" id="btnClose"></button>
+            </header>
+            <div class="row g-3 " id="details">
+             
+            </div>
+         </div>
+      </div>
+      <!-- Loader -->
+      <div class="loading d-none">
+         <div class="loader"></div>
+      </div>
+
+      <!-- JavaScript -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/index.js" type="module"></script>
+      
+</body>
+
+</html>

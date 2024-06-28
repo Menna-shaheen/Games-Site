@@ -1,0 +1,167 @@
+/* ------------------------------ */
+/* Global */
+/* ------------------------------ */
+body {
+   background-color: #272B30;
+   
+}
+p {
+   color: #e9ecf0 !important;
+   font-family: "Comic Neue", cursive;
+
+}
+
+h6 {
+   color: #f0f2f5;
+   font-family: "Comic Neue", cursive;
+
+}
+/* ------------------------------ */
+/* start scroll */
+/* ------------------------------ */
+::-webkit-scrollbar {
+   width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #32383e;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color:#272b30;
+   border-radius: 50px;
+   box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+/* ------------------------------ */
+/* start header */
+/* ------------------------------ */
+
+header img {
+   max-height: 35vh;
+
+}
+
+/* ------------------------------ */
+/* Start Navbar */
+/* ------------------------------ */
+.navbar{
+   
+   z-index: 9;
+
+}
+.navbar {
+   margin-top: -3% !important;
+   background-color: #3a497b;
+   box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+
+}
+
+nav h6,
+ul li {
+   font-family: "Comic Neue", cursive;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+   font-style: italic;
+
+}
+
+nav ul li a {
+   transition: all 0.3s;
+}
+
+nav ul li a:hover {
+   color: rgb(130, 130, 192) !important;
+}
+
+.navbar-nav .nav-link.active {
+   color: rgb(130, 130, 192) !important;
+}
+
+
+
+/* ------------------------------ */
+/* start cards */
+/* ------------------------------ */
+.card{
+   transition: all 0.8s;
+   filter: grayscale(0.7);
+}
+.card:hover{
+   transform: scale(1.1);
+   filter: grayscale(0);
+   cursor: pointer;
+}
+.card .description{
+   height: 12vh !important;
+}
+.card-body .btn1 {
+   padding: 0 5px 0 5px;
+   background-color: #09c;
+   border: 5px solid #09c;
+   color: #f0f2f5;
+   border-radius: 10px;
+   transition: all 0.5s;
+   font-family: "Comic Neue", cursive;
+
+}
+
+.card-end a {
+   color: #f0f2f5;
+   background-color: #7d8288;
+   font-size: 14px;
+}
+/* ------------------------------ */
+/* start header */
+/* ------------------------------ */
+.details {
+   z-index: 10;
+   position: absolute;
+   top:0;
+   width: 100%;
+   font-family: "Comic Neue", cursive;
+   color: #f0f2f5;
+   background-color: #242425;
+   backdrop-filter: blur(4px);
+   min-height: 100vh;
+}
+.details .col-md-4 p{
+   color: white !important;
+}
+.details .col-md-8 p span{
+   background-color: rgb(59, 185, 226);
+   color: #000;
+   font-weight: 600;
+   padding: 3px;
+   border-radius: 3px;
+}
+.btn-outline-warning{
+   color: white !important;
+   font-weight: 600;
+}
+/* ------------------------------ */
+/* start Loader */
+/* ------------------------------ */
+.load {
+   position: relative;
+}
+
+.loader {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 50px;
+   aspect-ratio: 1;
+   border-radius: 50%;
+   background:
+      radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%, #ffa516);
+   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+   animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+   100% {
+      transform: rotate(1turn)
+   }
+}
